@@ -11,9 +11,17 @@
             if (window.location.href.includes("sebkrantz.github.io/collapse")) {
                 const redirectLocation = window.location.href.replace(
                     "sebkrantz.github.io/collapse",
-                    "fastverse.github.io/collapse"
+                    "fastverse.org/collapse"
                 );
                 document.getElementById("body").innerHTML = "collapse has moved into the fastverse organization !<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
+            if (window.location.href.includes("sebkrantz.github.io/dfms")) {
+                const redirectLocation = window.location.href.replace(
+                    "sebkrantz.github.io/dfms",
+                    "docs.ropensci.org/dfms"
+                );
+                document.getElementById("body").innerHTML = "dfms has moved into the ropensci organization !<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
         }
