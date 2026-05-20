@@ -24,6 +24,14 @@
                 document.getElementById("body").innerHTML = "dfms has moved into the ropensci organization !<br/><br/>Redirecting to " + redirectLocation + " ...";
                 window.location.href = redirectLocation;
             }
+            if (window.location.href.includes("sebkrantz.github.io/AEILabs")) {
+                const redirectLocation = window.location.href.replace(
+                    "sebkrantz.github.io/AEILabs",
+                    "aeilabs.xyz"
+                );
+                document.getElementById("body").innerHTML = "AEILabs has moved to aeilabs.xyz !<br/><br/>Redirecting to " + redirectLocation + " ...";
+                window.location.href = redirectLocation;
+            }
         }
     </script>
 </head>
